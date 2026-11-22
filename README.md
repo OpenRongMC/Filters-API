@@ -1,29 +1,34 @@
-<div align="center"><img src="showcase.png" width="500px" alt="showcase"></div>
+# 创造栏筛选 API
 
-# Filters API
+简体中文 · [English](./README.en.md)
 
-Filters API is an easy-to-use, open, complete library, that provides a filtering system to categorize your mod's creative tab.
+为创造模式物品栏提供分类按钮。扩展可将物品分组，也可用「未分类」入口让未归类物品保持可见。交通套件用它整理数量很大的建筑与站务物品。
 
-Filters API makes it easy to find an item by adding new filter tabs to the left side of the creative screen that allow you to limit the items shown based on the category they fall under. Filters API also supports collecting uncategorized items to the uncategorized filter, to avoid uncategorized items disappearing from the tab.
+## 下载与安装
 
-Inspired by [Filters Mod](https://github.com/MrCrayfish/Filters) and [MrCrayfish's Furniture Mod](https://github.com/MrCrayfish/MrCrayfishFurnitureMod).
+- 版本 · [v1.0.0-port.1+26.3](https://github.com/OpenRongMC/Filters-API/releases/tag/v1.0.0-port.1%2B26.3) (已发布)
+- 下载文件 · `rongmc-filters-1.0.0-port.1.26.3.jar`
+- 运行环境 · Minecraft Java 26.3, Fabric, Java 25
+- Fabric Loader · `>=0.19.3`
+- Fabric 模组 ID · `rongmc_filters`
+- JAR 声明的依赖 · [Fabric API](https://modrinth.com/mod/fabric-api)
 
----
+把发行 JAR 放入对应实例的 `mods/` 目录。和使用筛选功能的模组一起装，版本以依赖它的模组发布说明为准。整合包联机时使用其指定的构建。
 
-## RongMC · Minecraft 26.3 Fabric 移植说明
+## 如何验证
 
-本仓库是 RongMC 维护的 **Minecraft 26.3 / Fabric / Java 25** 移植构建，不是上游官方发行渠道。
+进入创意模式，打开支持筛选的交通模组页签，切换两个分类并检查未分类物品。排查布局异常时，记录同时修改创造栏的模组。
 
-### 与原版的主要差异
-- 移植到 Minecraft 26.3 Fabric，供 MTR 等创造模式物品栏筛选使用。
-- Fabric id：`rongmc_filters`（provides `filters`）。
+## 开发
 
-### 已知问题 / 限制
-- 单独使用意义有限，通常作为交通套件依赖一起安装。
-- 若与其它也改创造页签的模组叠用，筛选按钮布局可能互相挤压（上游同类问题）。
+与同一版本的 MTR 和平台映射一起联调。交通套件的 RongMC 发布构建使用 Java 25，应以配套工作区和发行 JAR 的元数据为准。
 
-### 构建与安装
-- Fabric mod id：`rongmc_filters`（`provides`：`filters`，旧依赖名一般仍可解析）
-- Release 产物见本仓库 Releases（jar 名带 `rongmc-` 前缀）
-- 许可证：本仓以 **GPL-3.0** 发布（见 `LICENSE`）；请同时尊重上游原作者条款与署名
+## 文档与反馈
 
+- [原 README（旧版指南、贡献者与署名）](https://github.com/OpenRongMC/Filters-API/blob/8f804fea5652afd35aa24d3892362f25a935e8eb/README.md)
+- [上游项目与文档](https://github.com/ZiYueCommentary/Filters-API)
+- [报告 RongMC 移植问题](https://github.com/OpenRongMC/Filters-API/issues) · 请附游戏版本、两端 JAR 文件名、复现步骤和相关日志。
+
+## 许可与署名
+
+请参阅本仓库的 [LICENSE](./LICENSE) 及原项目的许可、署名和第三方资源说明。
