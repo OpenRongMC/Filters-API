@@ -1,31 +1,29 @@
-# Filters API (RongMC)
+<div align="center"><img src="showcase.png" width="500px" alt="showcase"></div>
 
-[中文](#中文) | [English](#english)
+# Filters API
 
-## 中文
+Filters API is an easy-to-use, open, complete library, that provides a filtering system to categorize your mod's creative tab.
 
-本仓库发布的是 **RongMC** 对 `Filters API` 的 Minecraft 26.3 Fabric 移植/维护或自研版本。
+Filters API makes it easy to find an item by adding new filter tabs to the left side of the creative screen that allow you to limit the items shown based on the category they fall under. Filters API also supports collecting uncategorized items to the uncategorized filter, to avoid uncategorized items disappearing from the tab.
 
-- Fabric mod id：`rongmc_filters`（provides：`filters`）
-- 许可证：**GNU GPL v3.0**
-- 本仓库包含完整源码（orphan 发布，Contributors 仅 ycrrongos）。
-- 部分改动由 vibecoding（AI 辅助编程）完成，并由人工审阅与测试。
-- 贡献者（Contributors）：仅 [ycrrongos](https://github.com/ycrrongos)
+Inspired by [Filters Mod](https://github.com/MrCrayfish/Filters) and [MrCrayfish's Furniture Mod](https://github.com/MrCrayfish/MrCrayfishFurnitureMod).
 
-### 许可
+---
 
-以 GNU General Public License v3.0 发布（见 `LICENSE`）。若上游原作另有条款，移植改动部分仍按 GPL-3.0；使用时请同时尊重上游要求。
+## RongMC · Minecraft 26.3 Fabric 移植说明
 
-## English
+本仓库是 RongMC 维护的 **Minecraft 26.3 / Fabric / Java 25** 移植构建，不是上游官方发行渠道。
 
-**RongMC** Minecraft 26.3 Fabric port / maintenance / original build of `Filters API`.
+### 与原版的主要差异
+- 移植到 Minecraft 26.3 Fabric，供 MTR 等创造模式物品栏筛选使用。
+- Fabric id：`rongmc_filters`（provides `filters`）。
 
-- Fabric mod id: `rongmc_filters` (provides: `filters`)
-- License: **GNU GPL v3.0**
-- This repository includes full source (orphan publish; contributor: ycrrongos only).
-- Some changes were made with vibecoding (AI-assisted coding), then reviewed and tested by humans.
-- Contributors: only [ycrrongos](https://github.com/ycrrongos)
+### 已知问题 / 限制
+- 单独使用意义有限，通常作为交通套件依赖一起安装。
+- 若与其它也改创造页签的模组叠用，筛选按钮布局可能互相挤压（上游同类问题）。
 
-### License
+### 构建与安装
+- Fabric mod id：`rongmc_filters`（`provides`：`filters`，旧依赖名一般仍可解析）
+- Release 产物见本仓库 Releases（jar 名带 `rongmc-` 前缀）
+- 许可证：本仓以 **GPL-3.0** 发布（见 `LICENSE`）；请同时尊重上游原作者条款与署名
 
-Released under GNU GPL v3.0 (see `LICENSE`). Respect upstream terms where applicable; RongMC changes are GPL-3.0.
