@@ -1,34 +1,20 @@
+<div align="center"><img src="showcase.png" width="500px" alt="showcase"></div>
+
 # Filters API
 
 [简体中文](./README.md) · English
 
-Adds category buttons to creative inventory tabs. Mods can group their items and expose an uncategorized filter so that ungrouped entries remain accessible. The transport suite uses it to organize large sets of construction and station items.
 
-## Download and installation
+Filters API is an easy-to-use, open, complete library, that provides a filtering system to categorize your mod's creative tab.
 
-- Version · [v1.0.0-port.1+26.3](https://github.com/OpenRongMC/Filters-API/releases/tag/v1.0.0-port.1%2B26.3) (Release)
-- Release asset · `rongmc-filters-1.0.0-port.1.26.3.jar`
-- Runtime · Minecraft Java 26.3, Fabric, Java 25
-- Fabric Loader · `>=0.19.3`
-- Fabric mod ID · `rongmc_filters`
-- Dependencies declared by the JAR · [Fabric API](https://modrinth.com/mod/fabric-api)
+Filters API makes it easy to find an item by adding new filter tabs to the left side of the creative screen that allow you to limit the items shown based on the category they fall under. Filters API also supports collecting uncategorized items to the uncategorized filter, to avoid uncategorized items disappearing from the tab.
 
-Place the release JAR in the instance’s `mods/` directory. Install it alongside the mods that use its filters, following their release-specific dependency requirements. In multiplayer, use the build selected by the modpack.
+Inspired by [Filters Mod](https://github.com/MrCrayfish/Filters) and [MrCrayfish's Furniture Mod](https://github.com/MrCrayfish/MrCrayfishFurnitureMod).
 
-## How to try it
+## What changed in the RongMC 26.3 port
 
-Open a supported transport tab in creative mode, switch between two categories, and check the uncategorized items. When reporting layout problems, include other mods that alter the creative inventory.
+The port adapts the creative inventory and SDL mouse input for 26.3 while keeping existing item categories. With RongMC Transport UI, transport-suite filter controls can follow the selected appearance.
 
-## Development
+## Installation
 
-Develop and test alongside the matching MTR and platform mappings. The RongMC transport build uses Java 25. Use the coordinated workspace and release metadata when reproducing a release.
-
-## Documentation and support
-
-- [Previous README (historical guide, contributors and credits)](https://github.com/OpenRongMC/Filters-API/blob/8f804fea5652afd35aa24d3892362f25a935e8eb/README.md)
-- [Upstream project and documentation](https://github.com/ZiYueCommentary/Filters-API)
-- [Report a RongMC port issue](https://github.com/OpenRongMC/Filters-API/issues) · Include the game version, client and server JAR names, reproduction steps and relevant logs.
-
-## License and credits
-
-See this repository’s [LICENSE](./LICENSE) and the original project’s license, credits and third-party asset notices.
+Download **v1.0.0-port.1+26.3** from [GitHub Releases](https://github.com/OpenRongMC/Filters-API/releases/tag/v1.0.0-port.1%2B26.3) for Minecraft Java **26.3** on **Fabric** with **Java 25**. Dependencies include [Fabric API](https://modrinth.com/mod/fabric-api). Place the release JAR in the instance’s `mods/` directory. Install it alongside the mods that use its filters, following their release-specific dependency requirements. In multiplayer, use the build selected by the modpack.
